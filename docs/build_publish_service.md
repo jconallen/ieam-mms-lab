@@ -1,6 +1,6 @@
 # Build and Publish the Image Processing Web Application Service
 
-In this section we will packge a simple web application that uses a TensorFlow model to discover objects in an image.  The web application consists of an HTML page, two test images, and a javascript model file.  Also pacakged in this service container is a script `service.sh` that runs constantly polling the IEAM Hub for changes in the model object.  When a change is published, this script will pull a copy of the new object (model file), and update the application.
+In this section we will package a simple web application that uses a TensorFlow model to discover objects in an image.  The web application consists of an HTML page, two test images, and a javascript model file.  Also pacakged in this service container is a script `service.sh` that runs constantly polling the IEAM Hub for changes in the model object.  When a change is published, this script will pull a copy of the new object (model file), and update the application.
 
 A simple web server is started in the container, and the edge devices are already configured to expose a port (40xx) to allow the application to be invoked externally.
 
@@ -28,7 +28,7 @@ The output of this command will indicate that it will be ``cancelling all agreem
 3. Clone this repository into the home directory of the user on the edge device.  Then change to the directory.  Here you will find all the files files necessary for the rest of the lab.
 ```bash
 cd ~
-git clone https://github.com/jconallen/ieam-mms-lab.git
+git clone https://github.ibm.com/jconallen/ieam-mms-lab.git
 
 cd ieam-mms-lab
 
@@ -98,7 +98,7 @@ The file `horizon/service_definition.json` contains the JSON properies for the s
 
 7. Sign and publish the container as a service on the IEAM Hub with the following Horizon command.
 ```bash
-hzn exchange service publish -f horizon/service_definition.json
+hzn exchange service publish -f horizon/service.definition.json
 
 ```
 
@@ -110,7 +110,7 @@ hzn exchange service list
 
 <table align="center">
 <tr>
-  <td align="left" width="9999"><a href="../install_agent.md">Previous: Install Agent</a> </td>
+  <td align="left" width="9999"><a href="install_agent.md">Previous: Install Agent</a> </td>
   <td align="right" width="9999"><a href="publish_deployment_policy.md">Next: Publish Deployment Policy </a> </td>
 </tr>
 </table>

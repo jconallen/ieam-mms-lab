@@ -15,7 +15,7 @@ export BUSINESS_POLICY_NAME="${SERVICE_NAME}.bp"
 # update the following files hostname value (in places that won't be substituted by env var).
 sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" service.sh
 sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" horizon/business_policy.json
-sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" horizon/node_policy.json
+sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" horizon/node_properties.json
 sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" horizon/service_policy.json
 
 # echo out the known environment vars to enable a quick check with
