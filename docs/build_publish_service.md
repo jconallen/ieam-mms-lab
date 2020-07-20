@@ -98,7 +98,7 @@ The file `horizon/service_definition.json` contains the JSON properies for the s
 
 7. Sign and publish the container as a service on the IEAM Hub with the following Horizon command.
 ```bash
-hzn exchange service publish -f horizon/service.definition.json
+hzn exchange service publish -f horizon/service_definition.json
 
 ```
 
