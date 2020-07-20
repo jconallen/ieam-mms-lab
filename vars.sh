@@ -16,7 +16,6 @@ export BUSINESS_POLICY_NAME="${SERVICE_NAME}.bp"
 sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" app/scripts/service.sh
 sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" horizon/business_policy.json
 sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" horizon/node_properties.json
-sed -i "s/\%HOSTNAME\%/$HOSTNAME/g" horizon/service_policy.json
 
 # echo out the known environment vars to enable a quick check with
 
