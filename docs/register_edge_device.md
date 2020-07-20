@@ -90,7 +90,7 @@ hzn mms object list
 
 8. Publish a newer version of the model file used in the service.
 ```bash
-hzn mms object publish -m mms/object.json -f models/model1.js
+hzn mms object publish -m horizon/mms_object.json -f models/model2.js
 
 ```
 
