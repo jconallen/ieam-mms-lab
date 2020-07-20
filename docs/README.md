@@ -31,7 +31,7 @@ Have on hand the following information:
 
 <table align="center">
 <tr>
-  <td align="right" width="9999"><a href="docs/install_agent.md">Install Agent</a></td>
+  <td align="right" width="9999"><a href="install_agent.md">Install Agent</a></td>
 </tr>
 </table>
 
