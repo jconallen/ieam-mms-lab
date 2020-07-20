@@ -28,7 +28,7 @@ The output of this command will indicate that it will be ``cancelling all agreem
 3. Clone this repository into the home directory of the user on the edge device.  Then change to the directory.  Here you will find all the files files necessary for the rest of the lab.
 ```bash
 cd ~
-git clone https://github.ibm.com/jconallen/ieam-mms-lab.git
+git clone https://github.com/jconallen/ieam-mms-lab.git
 
 cd ieam-mms-lab
 
