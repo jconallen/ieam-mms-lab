@@ -115,7 +115,7 @@ docker ps
 
 <table align="center">
 <tr>
-  <td align="left" width="9999"><a href="docs/publish_deployment_policy.md">Previous: Publish Deployment Policy</a> </td>
-  <td align="right" width="9999"><a href="docs/README.md">Back to beginning</a> </td>
+  <td align="left" width="9999"><a href="publish_deployment_policy.md">Previous: Publish Deployment Policy</a> </td>
+  <td align="right" width="9999"><a href="README.md">Back to beginning</a> </td>
 </tr>
 </table>

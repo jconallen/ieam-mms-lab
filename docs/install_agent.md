@@ -61,8 +61,8 @@ Horizon node is registered. Workload agreement negotiation should begin shortly.
 
 <table align="center">
 <tr>
-  <td align="left" width="9999"><a href="docs/README.md">Previous: Home</a> </td>
-  <td align="right" width="9999"><a href="docs/build_publish_service.md">Next: Build, Publish Service </a> </td>
+  <td align="left" width="9999"><a href="README.md">Previous: Home</a> </td>
+  <td align="right" width="9999"><a href="build_publish_service.md">Next: Build, Publish Service </a> </td>
 </tr>
 </table>
 
