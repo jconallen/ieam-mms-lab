@@ -48,11 +48,15 @@ docker ps
 ```
 You should see a container running.  This is your service that you built and published earlier.  Take note of the container ID.  We will verify that this is the same container running, after we have updated its model.
 
-5. Test the service/application with a web browser.  Use the IEAM Host URL (the same base URL as the IEAM console URL), with the `http` protocol, and a port number that starts with `40` and ends with the two digits of your edge device name.  For example if your edge device is `dev29` then the port number will be `4029`.  A typical service URL will be `http://green.coc-ibm.com:4029`.  The application should look like the following.
+5. Test the service/application with a web browser.  Use the IEAM Host URL (the same base URL as the IEAM console URL), with the `http` protocol, and a port number that starts with `40` and ends with the two digits of your edge device name.  For example if your edge device is `dev29` then the port number will be `4029`.  A typical service URL will be `http://green.coc-ibm.com:4029`.  
+
+The application should look like the following.
+
 ![Initial App Screen](images/tfapp.png)
 
 6. Press the Process Image 1 button to have the app load an image (dog and cow) into the web page, then use the TensorFlow model to process it and discover any recognizable objects.  For the first image, the results are not that good.  
-![Initial App Screen](images/tfapp1.png)
+
+![Processing Image1](images/tfapp1.png)
 
 The second image is better. But it is clear that we need an updated model for this service.
 
@@ -99,10 +103,11 @@ hzn mms object publish -m horizon/mms_object.json -f models/model2.js
 watch "hzn mms object list -t model -i $HOSTNAME-model.js -d"
 
 ```
-You should see the edge device appear as a destination, and the status of the update will change eventually to delivered.
+You should see the edge device appear as a destination, and the status of the update will change eventually to delivered.  When it has press Ctrl-C to cancel the watch.
 
 10.  Once the model has been delivered you can go back to your browser with the app running in it and try it again.  This time the first image should process with better results.
-![Initial App Screen](images/tfapp2.png)
+
+![Processing Image 2](images/tfapp2.png)
 
 11. Finally we will verify that the docker container did not restart, and that the model update was made in place (in the container).
 ```bash
