@@ -101,7 +101,7 @@ The file `horizon/mms_object.json` contains the definition of a model object tha
    ```
 You should see the edge device appear as a destination, and the status of the update will change eventually to delivered.
 
-10.  Once the model has been delivered you can go back to your browser with the app running in it and try it again.  This time the first image should process with better results.
+10.  Once the model has been delivered you can go back to your browser with the app running in it and try it again.  This time the first image should process with better results.  
 ![Initial App Screen](images/tfapp2.png)
 
 11. Finally we will verify that the docker container did not restart, and that the model update was made in place (in the container).
