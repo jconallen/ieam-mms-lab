@@ -5,7 +5,7 @@ In this section we will register the agent device back with the IEAM Hub.  We wi
 The `horizon/node+properties.json` contains the properties and constraints that will be associated with this edge device node.  The value for `%HOSTNAME%` will have been substituted with your actual edge device hostname when you processed all the envionment variables earlier.  
 
 
-```json
+```
 {
   "properties": [
     {
