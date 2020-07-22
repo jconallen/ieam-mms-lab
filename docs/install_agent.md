@@ -21,7 +21,7 @@ it to install the agent program on the edge device.
    ```
    cloudctl iam api-key-create  <IEAM userid>-edge-node-apikey 
 
-  ```  
+   ```  
 
 4. The output of this command will look something like the following (assumming your user id is `zippy`).  Copy the API Key value to your clipboard. 
 
