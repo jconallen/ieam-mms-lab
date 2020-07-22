@@ -8,6 +8,7 @@ Benefits of edge computing:
 - With IBM Edge Application Manager, you can deploy and manage critical workloads on edge nodes securely and reliably to hundreds of remote locations from a central location, without requiring full-time IT staff to be deployed at each of the remote locations for managing the workloads onsite.
 
 This repository is a lab/tutorial that demonstrates the [Open Horizon Model Management Service (MMS)](https://www.ibm.com/cloud/blog/models-deployed-at-the-edge). 
+
 [Git hub pages link](https://eswarak.github.io/ieam-mms-lab/)  
 
 It was originally based on following documents:
