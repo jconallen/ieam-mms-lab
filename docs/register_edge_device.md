@@ -46,7 +46,7 @@ These properties will be used by the IEAM Hub to see if there are any matches wi
    docker ps
 
    ```
-You should see a container running.  This is your service that you built and published earlier.  Take note of the container ID.  We will verify that this is the same container running, after we have updated its model.
+   You should see a container running.  This is your service that you built and published earlier.  Take note of the container ID.  We will verify that this is the same container running, after we have updated its model.
 
 5. Test the service/application with a web browser.  Use the IEAM Host URL (the same base URL as the IEAM console URL), with the `http` protocol, and a port number that starts with `40` and ends with the two digits of your edge device name.  For example if your edge device is `dev29` then the port number will be `4029`.  A typical service URL will be `http:/green.coc-ibm.com:4029`.  The application should look like the following.  
 ![Initial App Screen](images/tfapp.png)
@@ -54,33 +54,33 @@ You should see a container running.  This is your service that you built and pub
 6. Press the Process Image 1 button to have the app load an image (dog and cow) into the web page, then use the TensorFlow model to process it and discover any recognizable objects.  For the first image, the results are not that good.  
 ![Initial App Screen](images/tfapp1.png)
 
-The second image is better. But it is clear that we need an updated model for this service.
+   The second image is better. But it is clear that we need an updated model for this service.
 
-The file `horizon/mms_object.json` contains the definition of a model object that is managed by the IEAM Model Management Service (MMS).
-```
-{
-  "objectID": "$HOSTNAME-model.js",
-  "objectType": "model",
-  "destinationOrgID": "$HZN_ORG_ID",
-  "destinationPolicy": {
-    "properties": [],
-    "constraints": [
-     ],
-    "services": [
-        {
-            "orgID" : "$HZN_ORG_ID",
-            "arch": "$ARCH",
-            "serviceName" : "$SERVICE_NAME",
-            "version": "$SERVICE_VERSION"
-       }
-    ]
-  }, 
-  "expiration": "",
-  "version": "1.0.0",
-  "description": "image demo with tensorflow models",
-  "activationTime": ""
-}
-```
+   The file `horizon/mms_object.json` contains the definition of a model object that is managed by the IEAM Model Management Service (MMS).
+   ```
+   {
+   "objectID": "$HOSTNAME-model.js",
+   "objectType": "model",
+   "destinationOrgID": "$HZN_ORG_ID",
+   "destinationPolicy": {
+     "properties": [],
+     "constraints": [
+      ],
+     "services": [
+         {
+             "orgID" : "$HZN_ORG_ID",
+             "arch": "$ARCH",
+             "serviceName" : "$SERVICE_NAME",
+             "version": "$SERVICE_VERSION"
+        }
+     ]
+    }, 
+    "expiration": "",
+    "version": "1.0.0",
+    "description": "image demo with tensorflow models",
+    "activationTime": ""
+   }
+   ```  
 
 7. List all the MMS objects on the IEAM Hub.  You should see a number of objects, possible with prefixes of other device names.  Verify that there are no objects with out device name as a prefix.
    ```
@@ -99,7 +99,7 @@ The file `horizon/mms_object.json` contains the definition of a model object tha
    watch "hzn mms object list -t model -i $HOSTNAME-model.js -d"
  
    ```
-You should see the edge device appear as a destination, and the status of the update will change eventually to delivered.
+   You should see the edge device appear as a destination, and the status of the update will change eventually to delivered.
 
 10.  Once the model has been delivered you can go back to your browser with the app running in it and try it again.  This time the first image should process with better results.  
 ![Initial App Screen](images/tfapp2.png)
