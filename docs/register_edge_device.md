@@ -86,7 +86,7 @@ The file `horizon/mms_object.json` contains the definition of a model object tha
    ```
    hzn mms object list
 
-  ```
+  ```  
 
 8. Publish a newer version of the model file used in the service.  
    ```bash
