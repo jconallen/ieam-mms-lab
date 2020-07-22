@@ -1,9 +1,7 @@
 # IEAM Model Management System Lab
 
-In this lab you will demontrate the model management system being used to update
-a model resource in a simple image processing web application.  This update will 
-happen inside a runnning container without having to redeploy the service to the 
-edge device or even restart the service container.
+In this lab you will use a virtual device, install an agent and demontrate the model management system being used to update
+a model resource in a simple image processing web application.  This update will happen inside a runnning container without having to redeploy the service to the edge device or even restart the service container.
 
 There are several steps in this lab;
 
