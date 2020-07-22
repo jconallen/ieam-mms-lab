@@ -48,7 +48,7 @@ docker ps
 ```
 You should see a container running.  This is your service that you built and published earlier.  Take note of the container ID.  We will verify that this is the same container running, after we have updated its model.
 
-5. Test the service/application with a web browser.  Use the IEAM Host URL (the same base URL as the IEAM console URL), with the `http` protocol, and a port number that starts with `40` and ends with the two digits of your edge device name.  For example if your edge device is `dev29` then the port number will be `4029`.  A typical service URL will be `http:/green.coc-ibm.com:4029`.  The application should look like the following.
+5. Test the service/application with a web browser.  Use the IEAM Host URL (the same base URL as the IEAM console URL), with the `http` protocol, and a port number that starts with `40` and ends with the two digits of your edge device name.  For example if your edge device is `dev29` then the port number will be `4029`.  A typical service URL will be `http:/green.coc-ibm.com:4029`.  The application should look like the following.  
 ![Initial App Screen](images/tfapp.png)
 
 6. Press the Process Image 1 button to have the app load an image (dog and cow) into the web page, then use the TensorFlow model to process it and discover any recognizable objects.  For the first image, the results are not that good.  
