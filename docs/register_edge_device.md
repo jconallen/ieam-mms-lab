@@ -28,24 +28,24 @@ The `horizon/node+properties.json` contains the properties and constraints that 
 These properties will be used by the IEAM Hub to see if there are any matches with deployment patterns or policies.
 
 1. Register this edge device with the IEAM Hub.
-```bash
-hzn register --policy horizon/node_properties.json 
+   ``` 
+   hzn register --policy horizon/node_properties.json 
 
-```
+   ```
 
 2. An agreement wil be made soon. You can monitor this with the following command.
-```bash
-watch "hzn agreement list"
+   ```  
+   watch "hzn agreement list"
 
-```
+   ```
 
 3. After a  minute or two an agreement JSON object will display.  Press Ctl-C to cancel the watch.
 
 4. Verify the service is running locally on the device with the following docker command.
-```bash
-docker ps
+   ```
+   docker ps
 
-```
+   ```
 You should see a container running.  This is your service that you built and published earlier.  Take note of the container ID.  We will verify that this is the same container running, after we have updated its model.
 
 5. Test the service/application with a web browser.  Use the IEAM Host URL (the same base URL as the IEAM console URL), with the `http` protocol, and a port number that starts with `40` and ends with the two digits of your edge device name.  For example if your edge device is `dev29` then the port number will be `4029`.  A typical service URL will be `http:/green.coc-ibm.com:4029`.  The application should look like the following.  
@@ -57,7 +57,7 @@ You should see a container running.  This is your service that you built and pub
 The second image is better. But it is clear that we need an updated model for this service.
 
 The file `horizon/mms_object.json` contains the definition of a model object that is managed by the IEAM Model Management Service (MMS).
-```json
+```
 {
   "objectID": "$HOSTNAME-model.js",
   "objectType": "model",
@@ -83,32 +83,32 @@ The file `horizon/mms_object.json` contains the definition of a model object tha
 ```
 
 7. List all the MMS objects on the IEAM Hub.  You should see a number of objects, possible with prefixes of other device names.  Verify that there are no objects with out device name as a prefix.
-```bash
-hzn mms object list
+   ```
+   hzn mms object list
 
-```
+  ```
 
 8. Publish a newer version of the model file used in the service.
-```bash
-hzn mms object publish -m horizon/mms_object.json -f models/model2.js
+   ```bash
+   hzn mms object publish -m horizon/mms_object.json -f models/model2.js
 
-```
+   ```
 
 9. Monitor its status with the following watch.
-```bash
-watch "hzn mms object list -t model -i $HOSTNAME-model.js -d"
-
-```
+   ```
+   watch "hzn mms object list -t model -i $HOSTNAME-model.js -d"
+ 
+   ```
 You should see the edge device appear as a destination, and the status of the update will change eventually to delivered.
 
 10.  Once the model has been delivered you can go back to your browser with the app running in it and try it again.  This time the first image should process with better results.
 ![Initial App Screen](images/tfapp2.png)
 
 11. Finally we will verify that the docker container did not restart, and that the model update was made in place (in the container).
-```bash
-docker ps
+   ```
+   docker ps
 
-```
+   ```
 
 12.  Verify that the container id matches the one you noted back in step 4.
 
