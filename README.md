@@ -13,9 +13,9 @@ This repository is a lab/tutorial that demonstrates the [Open Horizon Model Mana
 
 It was originally based on following documents:
 
-https://github.com/open-horizon/examples/tree/master/edge/services/helloMMS#introduction
+[Hello MMS](https://github.com/open-horizon/examples/tree/master/edge/services/helloMMS#introduction)
 
-https://github.com/jiportilla/img-MMS
+[Example tensor flow](https://github.com/jiportilla/img-MMS)
 
 # Related resources
 
