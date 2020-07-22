@@ -24,4 +24,9 @@ Please make sure to check out the concepts, demos, product tours and other tutor
 - [Links for product tour, quick demo and hands-on-labs](https://www.ibm.com/demos/search/?products=%22IBM%20Edge%20Application%20Manager%22&lc=en)
 - [ IBM knowledge center](https://www.ibm.com/support/knowledgecenter/SSFKVV_4.1/hub/overview.html)
 
-Start here [IEAM Model Management System Lab](docs/README.md)
+<table align="center">
+<tr>
+  <td align="left" width="9999"><a href="docs/README.md">IEAM Model Management System Lab</a> </td>
+  <td align="right" width="9999"><a></a> </td>
+</tr>
+</table>
