@@ -21,10 +21,10 @@ it to install the agent program on the edge device.
    ```
    cloudctl iam api-key-create  <IEAM userid>-edge-node-apikey 
 
-  ```
+  ```  
 
 4. The output of this command will look something like the following (assumming your user id is `zippy`).  Copy the API Key value to your clipboard. 
- 
+
    ```
    Name          zippy-edge-node-apikey
    Description
@@ -33,15 +33,17 @@ it to install the agent program on the edge device.
    API Key       avqNQjrrknQ49gFEVfsqsqanhmniB0bhtn0nqA4oSovx
    ```
 
-5. Edit the VM's main environment variables file.  This requires `sudo` priviledges.
+5. Edit the VM's main environment variables file.  This requires `sudo` priviledges. 
+
    ```
    sudo nano /etc/environment
 
    ```
 
-6. On the line that begins with `HZN_EXCHANGE_USER_AUTH=iamapikey:` change the value of the API key after it to yours.  Save the file.
+6. On the line that begins with `HZN_EXCHANGE_USER_AUTH=iamapikey:` change the value of the API key after it to yours.  Save the file.  
 
 7. Reset the environment variables.   
+
    ```
    source /etc/environment
    env | grep -i hzn
@@ -49,12 +51,14 @@ it to install the agent program on the edge device.
    ```
 
 8. With the environment variables set with your API key we can install the agent which will connect to the IEAM Hub.  
+
    ```
    ./agent-device-install.sh 
 
    ```
 
 A lot of messages will go by.  If they end with the following you can continue on to the next section.  
+
    ```
    Horizon node is registered. Workload agreement negotiation should begin shortly. Run 'hzn agreement list' to view.
    ```
