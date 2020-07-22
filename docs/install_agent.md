@@ -23,7 +23,8 @@ it to install the agent program on the edge device.
 
   ```
 
-4. The output of this command will look something like the following (assumming your user id is `zippy`).  Copy the API Key value to your clipboard.  
+4. The output of this command will look something like the following (assumming your user id is `zippy`).  Copy the API Key value to your clipboard. 
+ 
    ```
    Name          zippy-edge-node-apikey
    Description
