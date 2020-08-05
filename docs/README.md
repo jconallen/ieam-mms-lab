@@ -20,11 +20,10 @@ This lab also expects that you have a Docker Hub account that you can use to pub
 
 Have on hand the following information:
 
-- **Edge device hostname and ssh port** 
 - **Edge device userid/password**
-- **IBM Edge Application Manager( IEAM ) URL**
+- **Edge device hostname and ssh port** 
 - **IEAM console userid/password**
-- **IEAM host url**
+- **IBM Edge Application Manager( IEAM ) URL**
 - **Your Docker Hub ID (you can <a href="https://hub.docker.com/signup" target="_blank">create a temporary one</a> if you like)**
 
 <table align="center">
