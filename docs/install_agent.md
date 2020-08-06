@@ -17,7 +17,7 @@ it to install the agent program on the edge device.
 
    ```
 
-3. Create a new API key to use with the Horizon CLI (`hzn`).   
+3. Create a new API key to use with the IEAM CLI (`cloudctl`).   
    ```
    cloudctl iam api-key-create  <IEAM userid>-edge-node-apikey 
 
